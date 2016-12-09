@@ -1,3 +1,7 @@
+trans_demand:
+    resource: "@TransBundle/Resources/config/routing/demand.yml"
+    prefix:   /demand
+
 index:
     path:     /
     defaults: { _controller: TransBundle:Main:index }
