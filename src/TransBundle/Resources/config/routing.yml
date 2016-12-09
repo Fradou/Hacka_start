@@ -1,9 +1,5 @@
-trans_homepage:
-    path:     /
-    defaults: { _controller: TransBundle:Default:index }
-
 index:
-    path:     /index
+    path:     /
     defaults: { _controller: TransBundle:Main:index }
 
 demande:
