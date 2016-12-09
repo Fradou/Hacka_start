@@ -2,22 +2,6 @@ trans_demand:
     resource: "@TransBundle/Resources/config/routing/demand.yml"
     prefix:   /demand
 
-index:
-    path:     /
-    defaults: { _controller: TransBundle:Main:index }
-
-demande:
-    path:     /demande
-    defaults: { _controller: TransBundle:Main:demande }
-
-offerlist:
-    path:     /offerlist
-    defaults: { _controller: TransBundle:Main:offerlist }
-
-com:
-    path:     /com
-    defaults: { _controller: TransBundle:Main:com }
-
-rating:
-    path:     /rating
-    defaults: { _controller: TransBundle:Main:rating }
+trans_main:
+    resource: "@TransBundle/Resources/config/routing/main.yml"
+    prefix:   /
