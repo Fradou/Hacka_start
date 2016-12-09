@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Demands list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Language</th>
+                <th>Place</th>
+                <th>Situation</th>
+                <th>Situationtitle</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for demand in demands %}
+            <tr>
+                <td><a href="{{ path('demand_show', { 'id': demand.id }) }}">{{ demand.id }}</a></td>
+                <td>{{ demand.language }}</td>
+                <td>{{ demand.place }}</td>
+                <td>{{ demand.situation }}</td>
+                <td>{{ demand.situationTitle }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('demand_show', { 'id': demand.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('demand_edit', { 'id': demand.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('demand_new') }}">Create a new demand</a>
+        </li>
+    </ul>
+{% endblock %}
