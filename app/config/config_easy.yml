@@ -29,7 +29,7 @@ easy_admin:
         brand_color: '#377E27'
         menu:
             - { label: 'Gestion DB'}
-     #       - Article
+            - Demand
             - { label: 'Retour au site'}
             - { label: 'Home', route: 'index' }
 #            - { label: 'Other Task', route: 'other_task', params: { max: 7 } }
