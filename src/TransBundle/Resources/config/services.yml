@@ -1,0 +1,4 @@
+services:
+#    trans.example:
+#        class: TransBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

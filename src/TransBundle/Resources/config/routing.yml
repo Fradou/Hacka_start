@@ -1,0 +1,23 @@
+trans_homepage:
+    path:     /
+    defaults: { _controller: TransBundle:Default:index }
+
+index:
+    path:     /index
+    defaults: { _controller: TransBundle:Main:index }
+
+demande:
+    path:     /demande
+    defaults: { _controller: TransBundle:Main:demande }
+
+offerlist:
+    path:     /offerlist
+    defaults: { _controller: TransBundle:Main:offerlist }
+
+com:
+    path:     /com
+    defaults: { _controller: TransBundle:Main:com }
+
+rating:
+    path:     /rating
+    defaults: { _controller: TransBundle:Main:rating }
