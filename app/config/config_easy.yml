@@ -1,0 +1,35 @@
+# EasyAdmin full config
+easy_admin:
+    site_name: 'JustAsk Admin'
+    formats:
+        date:     'd/m/Y'
+        time:     'H:i'
+        datetime: 'd/m/Y H:i:s'
+    entities:
+        Demand:
+            class: TransBundle\Entity\Demand
+            label: 'Demands'
+            list:
+                title: "Articles de la partie Blog du site"
+                fields:
+                    - 'id'
+                    - { property: 'language', label: 'Language' }
+                    - { property: 'img', label: 'Adresse image', type: 'image', base_path: '' }
+                    - { property: 'place', label: "Place" }
+                    - { property: 'situation', label: "Description" }
+                    - { property: 'situation_title', label: "Issue" }
+
+
+    # Pour la page search, determine les champs ou faire la recherche
+    list:
+        max_results: 20
+    show:
+        max_results: 15
+    design:
+        brand_color: '#377E27'
+        menu:
+            - { label: 'Gestion DB'}
+            - Demand
+            - { label: 'Retour au site'}
+            - { label: 'Home', route: 'index' }
+#            - { label: 'Other Task', route: 'other_task', params: { max: 7 } }
