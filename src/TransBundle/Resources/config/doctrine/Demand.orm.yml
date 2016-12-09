@@ -1,0 +1,24 @@
+TransBundle\Entity\Demand:
+    type: entity
+    table: null
+    repositoryClass: TransBundle\Repository\DemandRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        language:
+            type: string
+            length: 255
+        place:
+            type: string
+            length: 255
+        situation:
+            type: text
+        situationTitle:
+            type: string
+            length: 255
+            column: situation_title
+    lifecycleCallbacks: {  }
