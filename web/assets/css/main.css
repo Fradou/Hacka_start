@@ -2,3 +2,13 @@ h1 {
     color:red;
     font-size: 25px;
 }
+
+.orange{
+    background-color: #FF7707;
+    border-radius: 10px;
+}
+.input_login{
+    width: 15vw;
+    border-radius: 6px;
+    height: 10vh;
+}
