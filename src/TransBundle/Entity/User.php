@@ -161,4 +161,33 @@ class User extends BaseUser
     {
         return $this->nationality;
     }
+    /**
+     * @var boolean
+     */
+    private $translator;
+
+
+    /**
+     * Set translator
+     *
+     * @param boolean $translator
+     *
+     * @return User
+     */
+    public function setTranslator($translator)
+    {
+        $this->translator = $translator;
+
+        return $this;
+    }
+
+    /**
+     * Get translator
+     *
+     * @return boolean
+     */
+    public function getTranslator()
+    {
+        return $this->translator;
+    }
 }

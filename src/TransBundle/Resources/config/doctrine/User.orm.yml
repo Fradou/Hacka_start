@@ -22,3 +22,6 @@ TransBundle\Entity\User:
         nationality:
             type: string
             length: 255
+        translator:
+            type: boolean
+    lifecycleCallbacks: {  }
