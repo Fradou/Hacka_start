@@ -190,4 +190,33 @@ class User extends BaseUser
     {
         return $this->translator;
     }
+    /**
+     * @var string
+     */
+    private $profile_picture;
+
+
+    /**
+     * Set profilePicture
+     *
+     * @param string $profilePicture
+     *
+     * @return User
+     */
+    public function setProfilePicture($profilePicture)
+    {
+        $this->profile_picture = $profilePicture;
+
+        return $this;
+    }
+
+    /**
+     * Get profilePicture
+     *
+     * @return string
+     */
+    public function getProfilePicture()
+    {
+        return $this->profile_picture;
+    }
 }

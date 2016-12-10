@@ -3,8 +3,8 @@
 {% block title %}TransBundle:Main:index{% endblock %}
 {% block content %}
     Plop bien ou bien ?
-    <a href="tel:+33669662541">Call Us</a>
-<iframe src="https://discordapp.com/widget?id=256805150436491264&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+ {#   <a href="tel:+33669662541">Call Us</a>
+    <iframe src="https://discordapp.com/widget?id=256805150436491264&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/discord-widget/1.0/discord-widget.min.js"></script>
@@ -25,5 +25,17 @@
 
     <div class="discord-widget"></div>
 
-
+    <div itemscope itemtype="http://schema.org/LocalBusiness">
+        <h1 itemprop="name">Beach Bunny Swimwear</h1>
+        Phone:
+        <span itemprop="telephone">
+      <a href="callto:+33669662541">
+         +33669662541
+      </a>
+    </span>
+    </div>
+#}
+    <a href="callto:+33669662541">
+        +33669662541
+    </a>
 {% endblock %}

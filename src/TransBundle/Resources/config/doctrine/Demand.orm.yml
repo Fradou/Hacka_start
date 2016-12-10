@@ -9,16 +9,22 @@ TransBundle\Entity\Demand:
             generator:
                 strategy: AUTO
     fields:
-        language:
+        location:
             type: string
             length: 255
-        place:
+        languageNeeded:
+            type: string
+            length: 255
+        languageSpoken:
+            type: string
+            length: 255
+        institutionInvolved:
+            type: string
+            length: 255
+        institutionName:
             type: string
             length: 255
         situation:
             type: text
-        situationTitle:
-            type: string
-            length: 255
-            column: situation_title
+
     lifecycleCallbacks: {  }
