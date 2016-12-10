@@ -4,11 +4,16 @@ parameters:
 #    parameter_name: value
 
 services:
+# Override fosuser form template
+    app.form.registration:
+        class: TransBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: app_user_registration }
   # [...] Vos autres services
-  redirect.after.login:
-    class: UserBundle\Redirection\AfterLoginRedirection
-    arguments: [@router]
+    redirect.after.login:
+        class: UserBundle\Redirection\AfterLoginRedirection
+        arguments: [@router]
 
-  redirect.after.logout:
-    class: UserBundle\Redirection\AfterLogoutRedirection
-    arguments: [@router, @security.context]
+    redirect.after.logout:
+        class: UserBundle\Redirection\AfterLogoutRedirection
+        arguments: [@router, @security.context]

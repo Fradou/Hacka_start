@@ -6,3 +6,19 @@ TransBundle\Entity\User:
             type: integer
             generator:
                 strategy: AUTO
+    fields:
+        first_name:
+            type: string
+            length: 255
+        last_name:
+            type: string
+            length: 255
+        native_language:
+            type: string
+            length: 255
+        paypal_account:
+            type: string
+            length: 255
+        nationality:
+            type: string
+            length: 255
