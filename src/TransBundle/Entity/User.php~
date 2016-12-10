@@ -16,4 +16,149 @@ class User extends BaseUser
      */
     protected $id;
     
+    /**
+     * @var string
+     */
+    private $native_language;
+
+
+    /**
+     * Set nativeLanguage
+     *
+     * @param string $nativeLanguage
+     *
+     * @return User
+     */
+    public function setNativeLanguage($nativeLanguage)
+    {
+        $this->native_language = $nativeLanguage;
+
+        return $this;
+    }
+
+    /**
+     * Get nativeLanguage
+     *
+     * @return string
+     */
+    public function getNativeLanguage()
+    {
+        return $this->native_language;
+    }
+    /**
+     * @var string
+     */
+    private $first_name;
+
+    /**
+     * @var string
+     */
+    private $last_name;
+
+    /**
+     * @var string
+     */
+    private $paypal_account;
+
+    /**
+     * @var string
+     */
+    private $nationality;
+
+
+    /**
+     * Set firstName
+     *
+     * @param string $firstName
+     *
+     * @return User
+     */
+    public function setFirstName($firstName)
+    {
+        $this->first_name = $firstName;
+
+        return $this;
+    }
+
+    /**
+     * Get firstName
+     *
+     * @return string
+     */
+    public function getFirstName()
+    {
+        return $this->first_name;
+    }
+
+    /**
+     * Set lastName
+     *
+     * @param string $lastName
+     *
+     * @return User
+     */
+    public function setLastName($lastName)
+    {
+        $this->last_name = $lastName;
+
+        return $this;
+    }
+
+    /**
+     * Get lastName
+     *
+     * @return string
+     */
+    public function getLastName()
+    {
+        return $this->last_name;
+    }
+
+    /**
+     * Set paypalAccount
+     *
+     * @param string $paypalAccount
+     *
+     * @return User
+     */
+    public function setPaypalAccount($paypalAccount)
+    {
+        $this->paypal_account = $paypalAccount;
+
+        return $this;
+    }
+
+    /**
+     * Get paypalAccount
+     *
+     * @return string
+     */
+    public function getPaypalAccount()
+    {
+        return $this->paypal_account;
+    }
+
+    /**
+     * Set nationality
+     *
+     * @param string $nationality
+     *
+     * @return User
+     */
+    public function setNationality($nationality)
+    {
+        $this->nationality = $nationality;
+
+        return $this;
+    }
+
+    /**
+     * Get nationality
+     *
+     * @return string
+     */
+    public function getNationality()
+    {
+        return $this->nationality;
+    }
 }
