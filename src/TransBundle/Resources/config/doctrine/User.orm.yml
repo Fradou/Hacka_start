@@ -24,4 +24,7 @@ TransBundle\Entity\User:
             length: 255
         translator:
             type: boolean
+        profile_picture:
+            type: string
+            length: 255
     lifecycleCallbacks: {  }
