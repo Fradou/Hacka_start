@@ -1,12 +1,19 @@
 {% extends "FOSUserBundle::layout.html.twig" %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
+{% endblock %}
 {% block fos_user_content %}
 {% if error %}
     <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
 {% endif %}
     <div class="container text-center">
+        <h1>just<span class="askColor">Ask</span></h1>
+    </div>
+    <div class="container text-center vertCenter">
+
         <form action="{{ path("fos_user_security_check") }}" method="post">
             <div class="row orange">
+                <h2>Login</h2>
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
                 <div class="col-lg-offset-4 col-lg-4 loginLabel">
                     <label for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
@@ -28,9 +35,18 @@
                     <input class="btn btn-lg btn-default btnForm" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
                 </div>
                 <div  class="col-lg-offset-4 col-lg-4">
-                    <a href="{{ path('fos_user_resetting_request') }}">Mot de passe oublié ?</a>
+                    <a href="{{ path('fos_user_resetting_request') }}">Forgotten Password ?</a>
                 </div>
             </div>
         </form>
+        <div class="row">
+            <h2>Not Registered yet ?</h2>
+            <div class="col-lg-offset-1 col-lg-10">
+                <a href=""></a>
+            </div>
+            <div class="col-lg-offset-1 col-lg-10">
+                
+            </div>
+        </div>
     </div>
 {% endblock fos_user_content %}
