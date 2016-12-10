@@ -1,29 +1,35 @@
-{% extends 'base.html.twig' %}
+{% extends "::base.html.twig" %}
 
-{% block body %}
+{% block content %}
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
 
-                <h1>Welcome to City</h1>
+                <h1>Welcome to<br> Fontainebleau</h1>
             </div>
             <div class="col-xs-offset-1 col-xs-10">
 
                 {{ form_start(form) }}
                 <div class="form-group">
-                    {{ form_row(form.place, {label:'Location :', 'attr':{'class' : 'form-control'}}) }}
+                    {{ form_row(form.location, {label:'Location :', 'attr':{'class' : 'form-control'}}) }}
                 </div>
                 <div class="form-group">
-                    {{ form_row(form.language, {label:'Language needed :', 'attr':{'class' : 'form-control'} })}}
+                    {{ form_row(form.languageNeeded, {label:'Language needed :', 'attr':{'class' : 'form-control'} })}}
                 </div>
                 <div class="form-group">
-                    {{ form_row(form.situation, {label:'Institution involved :', 'attr':{'class' : 'form-control'}}) }}
+                    {{ form_row(form.languageSpoken, {label:'Language needed :', 'attr':{'class' : 'form-control'} })}}
                 </div>
                 <div class="form-group">
-                    {{ form_row(form.situationTitle, {label:'Task required :', 'attr':{'class' : 'form-control'}}) }}
+                    {{ form_row(form.institutionInvolved, {label:'Institution involved :', 'attr':{'class' : 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.institutionName, {label:'Institution name :', 'attr':{'class' : 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.situation, {label:'Task required :', 'attr':{'class' : 'form-control'}}) }}
                 </div>
 
-                <input type="submit" value="S'inscrire" />
+                <input type="submit" value="Search" />
                 {{ form_end(form) }}
             </div>
         </div>

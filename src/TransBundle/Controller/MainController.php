@@ -23,7 +23,6 @@ class MainController extends Controller
     public function offerlistAction()
     {
         return $this->render('Main/offerlist.html.twig', array(
-            // ...
         ));
     }
 

@@ -136,4 +136,149 @@ class Demand
     {
         return $this->situationTitle;
     }
+    /**
+     * @var string
+     */
+    private $location;
+
+    /**
+     * @var string
+     */
+    private $languageNeeded;
+
+    /**
+     * @var string
+     */
+    private $languageSpoken;
+
+    /**
+     * @var string
+     */
+    private $institutionInvolved;
+
+    /**
+     * @var string
+     */
+    private $institutionName;
+
+
+    /**
+     * Set location
+     *
+     * @param string $location
+     *
+     * @return Demand
+     */
+    public function setLocation($location)
+    {
+        $this->location = $location;
+
+        return $this;
+    }
+
+    /**
+     * Get location
+     *
+     * @return string
+     */
+    public function getLocation()
+    {
+        return $this->location;
+    }
+
+    /**
+     * Set languageNeeded
+     *
+     * @param string $languageNeeded
+     *
+     * @return Demand
+     */
+    public function setLanguageNeeded($languageNeeded)
+    {
+        $this->languageNeeded = $languageNeeded;
+
+        return $this;
+    }
+
+    /**
+     * Get languageNeeded
+     *
+     * @return string
+     */
+    public function getLanguageNeeded()
+    {
+        return $this->languageNeeded;
+    }
+
+    /**
+     * Set languageSpoken
+     *
+     * @param string $languageSpoken
+     *
+     * @return Demand
+     */
+    public function setLanguageSpoken($languageSpoken)
+    {
+        $this->languageSpoken = $languageSpoken;
+
+        return $this;
+    }
+
+    /**
+     * Get languageSpoken
+     *
+     * @return string
+     */
+    public function getLanguageSpoken()
+    {
+        return $this->languageSpoken;
+    }
+
+    /**
+     * Set institutionInvolved
+     *
+     * @param string $institutionInvolved
+     *
+     * @return Demand
+     */
+    public function setInstitutionInvolved($institutionInvolved)
+    {
+        $this->institutionInvolved = $institutionInvolved;
+
+        return $this;
+    }
+
+    /**
+     * Get institutionInvolved
+     *
+     * @return string
+     */
+    public function getInstitutionInvolved()
+    {
+        return $this->institutionInvolved;
+    }
+
+    /**
+     * Set institutionName
+     *
+     * @param string $institutionName
+     *
+     * @return Demand
+     */
+    public function setInstitutionName($institutionName)
+    {
+        $this->institutionName = $institutionName;
+
+        return $this;
+    }
+
+    /**
+     * Get institutionName
+     *
+     * @return string
+     */
+    public function getInstitutionName()
+    {
+        return $this->institutionName;
+    }
 }
