@@ -26,7 +26,9 @@
             <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
         {% endif %}
     </div>#}
-
+<nav>
+    <img class="img-responsive" src="{{ asset('assets/img/logo_justask.png') }}">
+</nav>
         {% for type, messages in app.session.flashBag.all %}
             {% for message in messages %}
                 <div class="{{ type }}">
