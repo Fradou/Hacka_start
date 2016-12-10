@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('assets/bootstrap-3.3.7-dist/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css') }}">
@@ -9,9 +10,8 @@
         <script src="{{ asset('assets/bootstrap-3.3.7-dist/js/bootstrap.min.js') }}"></script>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/font-awesome-4.7.0/css/font-awesome.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-
     </head>
     <body>
         {% block body %}
