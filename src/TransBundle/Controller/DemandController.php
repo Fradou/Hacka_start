@@ -42,7 +42,7 @@ class DemandController extends Controller
             $em->persist($demand);
             $em->flush($demand);
 
-            return $this->redirectToRoute('demand_show', array('id' => $demand->getId()));
+            return $this->redirectToRoute('offerlist', array('id' => $demand->getId()));
         }
 
         return $this->render('demand/new.html.twig', array(

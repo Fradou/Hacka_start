@@ -17,3 +17,7 @@ services:
     redirect.after.logout:
         class: UserBundle\Redirection\AfterLogoutRedirection
         arguments: [@router, @security.context]
+
+# Repository to stock queries to get translators' lists.
+    main.repository:
+        class: TransBundle\Repository\MainRepository

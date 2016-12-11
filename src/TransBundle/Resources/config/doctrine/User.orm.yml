@@ -1,6 +1,7 @@
 TransBundle\Entity\User:
     type:  entity
     table: fos_user
+    repositoryClass: TransBundle\Repository\UserRepository
     id:
         id:
             type: integer

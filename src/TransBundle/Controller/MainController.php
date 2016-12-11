@@ -3,6 +3,9 @@
 namespace TransBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use TransBundle\Entity\Demand;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class MainController extends Controller
 {
@@ -17,10 +20,25 @@ class MainController extends Controller
         ));
     }
 
-    public function offerlistAction()
+    public function demandeAction()
     {
-        return $this->render('Main/offerlist.html.twig', array(
+
+        return $this->render('Main/demande.html.twig', array(
+            // ...
         ));
+    }
+
+    public function offerlistAction(Request $request, Demand $demand)
+
+    {
+        $em = $this->getDoctrine()->getManager();
+        $helper = $em->getRepository('TransBundle:User')->findTranslator($demand);
+
+      //  $helper=$this->get('main.repository')->findTranslator($demand);
+
+        return $this->render('Main/offerlist.html.twig', array(
+            'helpers' => $helper,
+            ));
     }
 
     public function comAction()

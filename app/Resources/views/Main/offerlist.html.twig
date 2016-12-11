@@ -1,6 +1,30 @@
-{% extends "::base.html.twig" %}
-
-{% block title %}TransBundle:Main:offerlist{% endblock %}
+{% extends 'base.html.twig' %}
 
 {% block content %}
+    <div class="container">
+        <h1>Available translator</h1>
+
+        <div class="panel-group" id="accordion">
+            {% set i=1 %}
+            {% for helper in helpers %}
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <img src="{{ helper.profilepicture }}">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ i }}">
+                                {{ helper.firstName }} - {{ helper.lastName }}</a>
+
+                        </h4>
+                    </div>
+                    <div id="collapse{{ i }}" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            </div>
+                    </div>
+                </div>
+                {% set i=i+1 %}
+            {%  endfor %}
+
+        </div>
+    </div>
 {% endblock %}

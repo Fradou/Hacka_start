@@ -7,7 +7,7 @@ demande:
     defaults: { _controller: TransBundle:Main:demande }
 
 offerlist:
-    path:     /offerlist
+    path:     /{id}/offerlist
     defaults: { _controller: TransBundle:Main:offerlist }
 
 com:
