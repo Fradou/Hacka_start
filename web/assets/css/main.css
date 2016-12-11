@@ -1,5 +1,5 @@
 .toppad{
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 .taille{
     font-size: 2.5em;
@@ -198,4 +198,24 @@ table {border: none;}
 
 .half_opacity {
     opacity:0.5;
+}
+.fa-handshake-o, .fa-home{
+    color:white;
+}
+.fa-handshake-o:hover,
+.fa-home:hover
+{
+    color:orangered;
+}
+.navbar-fixed-bottom, .navbar-fixed-top, .navbar-static-top {
+    border-radius: 0;
+}
+.navbar-inverse {
+    background-image: -webkit-linear-gradient(top,#fc9a08 0,#D79A40 100%);
+    background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fc9a08),to(#D79A40));
+    background-image: linear-gradient(to bottom,#fc9a08 0,#D79A40 100%);
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
 }
