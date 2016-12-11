@@ -8,11 +8,8 @@
 
 namespace TransBundle\Repository;
 
-
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;
-use FOS\UserBundle\Entity\User;
-use FOS\UserBundle\Entity\UserManager;
+
 
 class MainRepository extends EntityRepository
 {
@@ -20,15 +17,22 @@ class MainRepository extends EntityRepository
 
         /** On met les % pour pouvoir utiliser "like" et ainsi utiliser de la wildcard.
          * Si pas de % le like se comporterait comme un simple where */
-        EntityManager::create(UserManager::class, User::class);
-        $em = $this->getEntityManager();
-        $qb= $em->createQueryBuilder('u')
-            -> select('User', 'u')
+
+        $qb= $this->createQueryBuilder('u')
+            -> select(array('u'))
             /**   :country le ":" indique que country est un paramter */
             ->where('u.nativeLanguage = needed' OR 'u.nativeLanguage = spoken' )
             ->setParameters(array('needed'=> $demand->languageNeeded, 'spoken' => $demand->languageSpoken))
             ->getQuery();
+
+   //         ->where('j.domain = :domain')
+     //       ->setParameter('domain', $domain)
+       //     ->getQuery();
         return $qb->getResult();
+
+
+       //     -> select('User', 'u')
+            /**   :country le ":" indique que country est un paramter */
     }
 
 }
