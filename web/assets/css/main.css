@@ -219,3 +219,8 @@ table {border: none;}
 .navbar-inverse .navbar-nav > li > a {
     color: white;
 }
+
+.panel-title img {
+    height: 35px;
+    width: 35px;
+}
