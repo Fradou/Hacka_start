@@ -6,6 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class MainController extends Controller
 {
+    public function countDownAction()
+    {
+        return $this->render('Main/countdown.html.twig');
+    }
     public function indexAction()
     {
         return $this->render('Main/index.html.twig', array(
@@ -15,6 +19,7 @@ class MainController extends Controller
 
     public function demandeAction()
     {
+
         return $this->render('Main/demande.html.twig', array(
             // ...
         ));
@@ -35,9 +40,10 @@ class MainController extends Controller
 
     public function ratingAction()
     {
-        return $this->render('Main/rating.html.twig', array(
-            // ...
+        $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository('TransBundle:User')->find(4);
+        return $this->render(':Main:rating.html.twig', array(
+            'user' => $user,
         ));
     }
-
 }
