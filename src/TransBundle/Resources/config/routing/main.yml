@@ -21,3 +21,7 @@ rating:
 countdown:
     path:     /countdown
     defaults: { _controller: TransBundle:Main:countDown }
+
+ratingvalid:
+    path:     /valid
+    defaults: { _controller: TransBundle:Main:ratingValid }

@@ -17,14 +17,6 @@ class MainController extends Controller
         ));
     }
 
-    public function demandeAction()
-    {
-
-        return $this->render('Main/demande.html.twig', array(
-            // ...
-        ));
-    }
-
     public function offerlistAction()
     {
         return $this->render('Main/offerlist.html.twig', array(
@@ -34,6 +26,13 @@ class MainController extends Controller
     public function comAction()
     {
         return $this->render('Main/com.html.twig', array(
+            // ...
+        ));
+    }
+
+    public function ratingValidAction()
+    {
+        return $this->render('Main/ratingvalid.html.twig', array(
             // ...
         ));
     }

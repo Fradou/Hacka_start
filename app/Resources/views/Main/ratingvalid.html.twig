@@ -1,0 +1,54 @@
+{% extends "::base.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+                <div class="panel panel-info">
+                    <div class="row text-center blabla">
+                        <table class="table table-user-information">
+                            <tbody>
+                                <tr class="text-center taille">
+                                    <td><p>{{ user.firstName}}{{ user.lastName }}</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2>Quality of Call</h2>
+                                        <div class="star-rating">
+                                            <div class="rating">
+                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Satisfaction</h2>
+                                        <div class="star-rating2">
+                                            <div class="rating2">
+                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Language Proficiency</h2>
+                                        <div class="star-rating3">
+                                            <div class="rating3">
+                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="{{ path('ratingvalid') }}" class="btn btn-primary">SUBMIT</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
