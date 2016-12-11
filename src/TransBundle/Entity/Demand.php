@@ -281,4 +281,62 @@ class Demand
     {
         return $this->institutionName;
     }
+    /**
+     * @var integer
+     */
+    private $translator;
+
+    /**
+     * @var integer
+     */
+    private $applicant;
+
+
+    /**
+     * Set translator
+     *
+     * @param integer $translator
+     *
+     * @return Demand
+     */
+    public function setTranslator($translator)
+    {
+        $this->translator = $translator;
+
+        return $this;
+    }
+
+    /**
+     * Get translator
+     *
+     * @return integer
+     */
+    public function getTranslator()
+    {
+        return $this->translator;
+    }
+
+    /**
+     * Set applicant
+     *
+     * @param integer $applicant
+     *
+     * @return Demand
+     */
+    public function setApplicant($applicant)
+    {
+        $this->applicant = $applicant;
+
+        return $this;
+    }
+
+    /**
+     * Get applicant
+     *
+     * @return integer
+     */
+    public function getApplicant()
+    {
+        return $this->applicant;
+    }
 }

@@ -26,5 +26,9 @@ TransBundle\Entity\Demand:
             length: 255
         situation:
             type: text
+        translator:
+            type: integer
+        applicant:
+            type: integer
 
     lifecycleCallbacks: {  }

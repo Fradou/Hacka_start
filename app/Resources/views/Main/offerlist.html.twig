@@ -1,6 +1,29 @@
-{% extends "::base.html.twig" %}
-
-{% block title %}TransBundle:Main:offerlist{% endblock %}
+{% extends 'base.html.twig' %}
 
 {% block content %}
+    <h1>Demands list</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Language</th>
+            <th>Place</th>
+            <th>Situation</th>
+            <th>Situationtitle</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for helper in helpers %}
+            <tr>
+                <td><a href="{{ path('demand_show', { 'id': demand.id }) }}">{{ demand.id }}</a></td>
+                <td>{{ helper.language }}</td>
+                <td>{{ helper.place }}</td>
+                <td>{{ helper.situation }}</td>
+                <td>{{ helper.situationTitle }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

@@ -23,7 +23,9 @@ class DemandType extends AbstractType
                 'choices' => array('Bank' => 'Bank', 'Insurance' => 'Insurance', 'Restaurant' => 'Restaurant', 'Medical' => 'Medical', 'Government Service' => 'Government Service', 'Legal issue' => 'Legal issue', 'Emergency' => 'Emergency', 'Shopping' => 'Shopping'),
         'choices_as_values' => true,))
             ->add('institutionName')
-            ->add('situation')        ;
+            ->add('situation')
+            ->add('translator')
+            ->add('applicant');
     }
     
     /**
