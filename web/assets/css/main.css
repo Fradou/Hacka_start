@@ -16,131 +16,77 @@ nav img {
 }
 
 /* Rating System */
-.star-rating {
-    font-family: 'FontAwesome';
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    font-size: 30px;
 }
-.star-rating > fieldset {
-    border: none;
+.rating > span {
     display: inline-block;
-}
-.star-rating > fieldset:not(:checked) > input {
-    position: absolute;
-    top: -9999px;
-    clip: rect(0, 0, 0, 0);
-}
-.star-rating > fieldset:not(:checked) > label {
-    float: right;
-    width: 1em;
-    padding: 0 .05em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 200%;
-    color: #efe80c;
-}
-.star-rating > fieldset:not(:checked) > label:before {
-    content: '\f006  ';
-}
-.star-rating > fieldset:not(:checked) > label:hover,
-.star-rating > fieldset:not(:checked) > label:hover ~ label {
-    color: #ebef26;
-    text-shadow: 0 0 2px #ebef26;
-}
-.star-rating > fieldset:not(:checked) > label:hover:before,
-.star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-    content: '\f005  ';
-}
-.star-rating > fieldset > input:checked ~ label:before {
-    content: '\f005  ';
-}
-.star-rating > fieldset > label:active {
     position: relative;
-    top: 2px;
+    width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+    color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: gold;
 }
 
-.star-rating2 {
-     font-family: 'FontAwesome';
- }
-.star-rating2 > fieldset {
-    border: none;
+.rating2 {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    font-size: 30px;
+}
+.rating2 > span {
     display: inline-block;
-}
-.star-rating2 > fieldset:not(:checked) > input {
-    position: absolute;
-    top: -9999px;
-    clip: rect(0, 0, 0, 0);
-}
-.star-rating2 > fieldset:not(:checked) > label {
-    float: right;
-    width: 1em;
-    padding: 0 .05em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 200%;
-    color: #efe80c;
-}
-.star-rating2 > fieldset:not(:checked) > label:before {
-    content: '\f006  ';
-}
-.star-rating2 > fieldset:not(:checked) > label:hover,
-.star-rating2 > fieldset:not(:checked) > label:hover ~ label {
-    color: #ebef26;
-    text-shadow: 0 0 2px #ebef26;
-}
-.star-rating2 > fieldset:not(:checked) > label:hover:before,
-.star-rating2 > fieldset:not(:checked) > label:hover ~ label:before {
-    content: '\f005  ';
-}
-.star-rating2 > fieldset > input:checked ~ label:before {
-    content: '\f005  ';
-}
-.star-rating2 > fieldset > label:active {
     position: relative;
-    top: 2px;
+    width: 1.1em;
+}
+.rating2 > span:hover,
+.rating2 > span:hover ~ span {
+    color: transparent;
+}
+.rating2 > span:hover:before,
+.rating2 > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: gold;
 }
 
-.star-rating3 {
-    font-family: 'FontAwesome';
+.rating3 {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    font-size: 30px;
 }
-.star-rating3 > fieldset {
-    border: none;
+.rating3 > span {
     display: inline-block;
-}
-.star-rating3 > fieldset:not(:checked) > input {
-    position: absolute;
-    top: -9999px;
-    clip: rect(0, 0, 0, 0);
-}
-.star-rating3 > fieldset:not(:checked) > label {
-    float: right;
-    width: 1em;
-    padding: 0 .05em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 200%;
-    color: #efe80c;
-}
-.star-rating3 > fieldset:not(:checked) > label:before {
-    content: '\f006  ';
-}
-.star-rating3 > fieldset:not(:checked) > label:hover,
-.star-rating3 > fieldset:not(:checked) > label:hover ~ label {
-    color: #ebef26;
-    text-shadow: 0 0 2px #ebef26;
-}
-.star-rating3 > fieldset:not(:checked) > label:hover:before,
-.star-rating3 > fieldset:not(:checked) > label:hover ~ label:before {
-    content: '\f005  ';
-}
-.star-rating3 > fieldset > input:checked ~ label:before {
-    content: '\f005  ';
-}
-.star-rating3 > fieldset > label:active {
     position: relative;
-    top: 2px;
+    width: 1.1em;
 }
+.rating3 > span:hover,
+.rating3 > span:hover ~ span {
+    color: transparent;
+}
+.rating3 > span:hover:before,
+.rating3 > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: gold;
+}
+
+
+
 table {border: none;}
 
 .table > tbody > tr > td{

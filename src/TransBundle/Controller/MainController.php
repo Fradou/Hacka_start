@@ -29,6 +29,7 @@ class MainController extends Controller
     }
 
     public function offerlistAction(Request $request, Demand $demand)
+
     {
         $em = $this->getDoctrine()->getManager();
         $helper = $em->getRepository('TransBundle:User')->findTranslator($demand);
@@ -43,6 +44,13 @@ class MainController extends Controller
     public function comAction()
     {
         return $this->render('Main/com.html.twig', array(
+            // ...
+        ));
+    }
+
+    public function ratingValidAction()
+    {
+        return $this->render('Main/ratingvalid.html.twig', array(
             // ...
         ));
     }
