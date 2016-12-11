@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -47,13 +47,8 @@
                 <div class="container">
                     <div class="navbar-collapse collapse" id="footer-body">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Browse Our Library</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Our Partners</a></li>
-                            <li><a href="#">User Review</a></li>
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a class="white" href="{{ path('fos_user_profile_edit') }}">Account Settings</a></li>
+                            <li><a class="white" href="{{ path('fos_user_security_logout') }}">Log Out</a></li>
                         </ul>
                     </div>
                     <div class="navbar-header">
@@ -63,9 +58,8 @@
                             <span class="icon-bar"></span>
                         </button>
                         <ul class="footer-bar-btns visible-xs list-unstyled list-inline">
-                            <li><a href="#" class="btn" title="History"><i class="fa fa-2x fa-clock-o blue-text"></i></a></li>
-                            <li><a href="#" class="btn" title="Favourites"><i class="fa fa-2x fa-star yellow-text"></i></a></li>
-                            <li><a href="#" class="btn" title="Subscriptions"><i class="fa fa-2x fa-rss-square orange-text"></i></a></li>
+                            <li><a href="{{ path('demand_new') }}" class="btn" title="History"><i class="fa fa-2x fa-handshake-o blue-text"></i></a></li>
+                            <li><a href="{{ path('fos_user_profile_show') }}" class="btn" title="Subscriptions"><i class="fa fa-2x fa-home orange-text"></i></a></li>
                         </ul>
                     </div>
 

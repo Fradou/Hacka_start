@@ -3,14 +3,61 @@
 {% block title %}TransBundle:Main:rating{% endblock %}
 
 {% block content %}
-
-    <div class="star-rating">
-        <fieldset>
-            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding">5 stars</label>
-            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good">4 stars</label>
-            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">3 stars</label>
-            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">2 stars</label></a>
-            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
-        </fieldset>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+                <div class="panel panel-info">
+                    <div class="row text-center blabla">
+                        <table class="table table-user-information">
+                            <tbody>
+                            <tr class="text-center taille">
+                                <td><p>{{ user.firstName}}{{ user.lastName }}</p></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>Quality of Call</h2>
+                                    <div class="star-rating">
+                                        <fieldset>
+                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding">5 stars</label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good">4 stars</label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">3 stars</label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">2 stars</label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
+                                        </fieldset>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h2>Satisfaction</h2>
+                                    <div class="star-rating2">
+                                        <fieldset>
+                                            <input type="radio" id="star10" name="rating" value="5" /><label for="star5" title="Outstanding">5 stars</label>
+                                            <input type="radio" id="star9" name="rating" value="4" /><label for="star4" title="Very Good">4 stars</label>
+                                            <input type="radio" id="star8" name="rating" value="3" /><label for="star3" title="Good">3 stars</label>
+                                            <input type="radio" id="star7" name="rating" value="2" /><label for="star2" title="Poor">2 stars</label>
+                                            <input type="radio" id="star6" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
+                                        </fieldset>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h2>Language Proficiency</h2>
+                                    <div class="star-rating3">
+                                        <fieldset>
+                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding">5 stars</label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good">4 stars</label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">3 stars</label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">2 stars</label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
+                                        </fieldset>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

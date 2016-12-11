@@ -17,3 +17,7 @@ com:
 rating:
     path:     /rating
     defaults: { _controller: TransBundle:Main:rating }
+
+countdown:
+    path:     /countdown
+    defaults: { _controller: TransBundle:Main:countDown }
