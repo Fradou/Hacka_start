@@ -87,6 +87,7 @@ nav img {
 
 
 
+
 table {border: none;}
 
 .table > tbody > tr > td{
@@ -167,6 +168,6 @@ table {border: none;}
 }
 
 .panel-title img {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
 }

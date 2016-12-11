@@ -12,14 +12,19 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <img src="{{ helper.profilepicture }}">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ i }}">
-                                {{ helper.firstName }} - {{ helper.lastName }}</a>
-
+                            {{ helper.firstName }} {{ helper.lastName }}
+                            <br>
                         </h4>
+                        <p>
+                            sddvjbnedvlbemnmejernmvergerlkgj ermger<br>fhjbeklfeblez
+                            <br>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ i }}">Full profile</a>
+                            <a role="button" class="btn btn-success pull-right" href="{{ path('countdown') }}">JustAsk</a>
+                        </p>
                     </div>
                     <div id="collapse{{ i }}" class="panel-collapse collapse">
                         <div class="panel-body">
-                            </div>
+                        </div>
                     </div>
                 </div>
                 {% set i=i+1 %}
