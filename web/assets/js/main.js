@@ -3,11 +3,9 @@
  */
 $(document).ready(function(){
    $('span').click(function(){
-       $(this).nextAll().html('☆').css('color', 'transparent');
-       $(this).html('☆').css('color', 'transparent');
-       $(this).prevAll().html('☆').css('color', 'none');
+       $(this).prevAll().html('☆').css('color', 'black');
 
-       $(this).nextAll().html('★').css('color', 'none');
+       $(this).nextAll().html('★').css('color', 'gold');
        $(this).html('★').css('color', 'gold');
    })
 });

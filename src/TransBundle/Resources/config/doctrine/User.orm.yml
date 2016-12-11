@@ -28,4 +28,10 @@ TransBundle\Entity\User:
         profile_picture:
             type: string
             length: 255
+        rating:
+            type: integer
+            nullable: true
+        rate_number:
+            type: integer
+            nullable: true
     lifecycleCallbacks: {  }
