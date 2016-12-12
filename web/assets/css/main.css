@@ -168,6 +168,27 @@ table {border: none;}
 }
 
 .panel-title img {
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
+}
+
+.bloc_sp {
+    height: 10vh;
+}
+
+.profpic, .ratinglist {
+    display:inline-block;
+}
+
+.ratinglist {
+    float:right;
+    text-align:right;
+}
+
+.ratinglist > span {
+    font-weight: 900;
+}
+
+.profpic p {
+    display:inline;
 }

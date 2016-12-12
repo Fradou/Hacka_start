@@ -29,7 +29,7 @@ TransBundle\Entity\User:
             type: string
             length: 255
         rating:
-            type: integer
+            type: float
             nullable: true
         rate_number:
             type: integer

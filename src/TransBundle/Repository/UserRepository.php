@@ -23,7 +23,8 @@ class UserRepository extends EntityRepository
         $qb= $this->createQueryBuilder('u')
             -> select(array('u'))
             /**   :country le ":" indique que country est un parameter */
-            ->where('u.native_language = :needed OR u.native_language = :spoken' )
+            ->where('u.native_language = :needed OR u.native_language = :spoken')
+            ->orderBy('u.rating', 'desc')
             //  OR u.nativeLanguage = :spoken
             ->setParameters(array('needed' => $searching->getLanguageSpoken(),'spoken' => $searching->getLanguageNeeded() ))
             ->getQuery();

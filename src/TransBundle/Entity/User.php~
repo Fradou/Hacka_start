@@ -219,4 +219,62 @@ class User extends BaseUser
     {
         return $this->profile_picture;
     }
+    /**
+     * @var integer
+     */
+    private $rating;
+
+    /**
+     * @var integer
+     */
+    private $rate_number;
+
+
+    /**
+     * Set rating
+     *
+     * @param integer $rating
+     *
+     * @return User
+     */
+    public function setRating($rating)
+    {
+        $this->rating = $rating;
+
+        return $this;
+    }
+
+    /**
+     * Get rating
+     *
+     * @return integer
+     */
+    public function getRating()
+    {
+        return $this->rating;
+    }
+
+    /**
+     * Set rateNumber
+     *
+     * @param integer $rateNumber
+     *
+     * @return User
+     */
+    public function setRateNumber($rateNumber)
+    {
+        $this->rate_number = $rateNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get rateNumber
+     *
+     * @return integer
+     */
+    public function getRateNumber()
+    {
+        return $this->rate_number;
+    }
 }
