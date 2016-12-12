@@ -480,4 +480,33 @@ class User extends BaseUser
     {
         return $this->experience;
     }
+    /**
+     * @var integer
+     */
+    private $proximity;
+
+
+    /**
+     * Set proximity
+     *
+     * @param integer $proximity
+     *
+     * @return User
+     */
+    public function setProximity($proximity)
+    {
+        $this->proximity = $proximity;
+
+        return $this;
+    }
+
+    /**
+     * Get proximity
+     *
+     * @return integer
+     */
+    public function getProximity()
+    {
+        return $this->proximity;
+    }
 }

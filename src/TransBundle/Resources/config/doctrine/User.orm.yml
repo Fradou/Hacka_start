@@ -55,4 +55,8 @@ TransBundle\Entity\User:
         experience:
             type: string
             nullable: true
+        proximity:
+            type: integer
+            nullable: true
+
     lifecycleCallbacks: {  }

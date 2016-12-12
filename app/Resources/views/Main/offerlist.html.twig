@@ -12,10 +12,11 @@
             <div class="panel-heading">
                 <div class="panel-title">
                     <div class="profpic">
-                        <img class="img-circle" src="{{ helper.profilepicture }}"><p>{{ helper.firstName }} {{ helper.lastName }}</p>
+                        <img class="img-circle" src="{{ helper.profilepicture }}"><p>{{ helper.firstName }} {{ helper.lastName }}<br>
+                        <small>Around {{ helper.proximity }} miles from you.</small></p>
                     </div>
-                    <div class="ratinglist"><p>Rating : <span>{{ helper.rating }}/5</span><br>
-                            Fee : <span>5€</span></p>
+                    <div class="ratinglist"><p>Rating : {{ helper.rating }}/5<br>
+                            <span>5€/10m then 2€/5m</span></p>
                     </div>
                     <br>
                 </div>
