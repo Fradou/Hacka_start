@@ -191,8 +191,9 @@ table {border: none;}
     text-align:right;
 }
 
-.ratinglist > span {
-    font-weight: 900;
+.ratinglist >p> span {
+    font-weight: 600;
+    font-size:12px;
 }
 
 .profpic p {
