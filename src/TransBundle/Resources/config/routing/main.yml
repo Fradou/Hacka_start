@@ -1,6 +1,6 @@
 index:
-    path:     /login
-    defaults: { _controller: TransBundle:Main:index }
+    path:     /
+    defaults: { _controller: FOSUserBundle:Security:login }
 
 demande:
     path:     /demande

@@ -163,10 +163,10 @@ table {border: none;}
     border-radius: 0;
 }
 .navbar-inverse {
-    background-image: -webkit-linear-gradient(top,#fc9a08 0,#ffa832 100%);
-    background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#fc9a08),to(#ffa832));
-    background-image: linear-gradient(to bottom,#fc9a08 0,#ffa832 100%);
+    background-image: -webkit-linear-gradient(top,#f39c12 0,#f39c12 100%);
+    background-image: -o-linear-gradient(top,#f39c12 0,#f39c12 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f39c12),to(#f39c12));
+    background-image: linear-gradient(to bottom,#f39c12 0,#f39c12 100%);
 }
 .navbar-inverse .navbar-nav > li > a {
     color: white;
@@ -181,13 +181,13 @@ table {border: none;}
 }
 .panel-info > .panel-heading {
     color: white;
-    background-color: #fc9a08;
-    border-color: #fc9000;
-    background-image: linear-gradient(to bottom,#fc9a08 0, #ffa832 100%);
+    background-color: #f39c12;
+    border-color: #f39c12;
+    background-image: linear-gradient(to bottom,#f39c12 0, #f39c12 100%);
 
 }
 .panel-info {
-    border-color: #ffa832;
+    border-color: #f39c12;
 }
 
 .text-info {
@@ -195,5 +195,12 @@ table {border: none;}
 }
 .td_title{
     text-decoration: underline;
+    font-size: 16px;
+}
+.apl_bdd{
+    font-size: 16px;
 }
 hr.style-two { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+.pp{
+    width: 250px;
+}
