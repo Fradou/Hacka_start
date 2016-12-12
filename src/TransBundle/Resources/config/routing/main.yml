@@ -1,6 +1,6 @@
 index:
     path:     /
-    defaults: { _controller: TransBundle:Main:index }
+    defaults: { _controller: FOSUserBundle:Security:login }
 
 demande:
     path:     /demande
@@ -25,3 +25,7 @@ countdown:
 ratingvalid:
     path:     /valid
     defaults: { _controller: TransBundle:Main:ratingValid }
+
+mailvalid:
+    path:     /{id}/mail
+    defaults: { _controller: TransBundle:Main:mailValid }
