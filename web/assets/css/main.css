@@ -224,5 +224,10 @@ table {border: none;}
 }
 hr.style-two { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
 .pp{
-    width: 250px;
+    width: 175px;
+}
+.button_me{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
 }
