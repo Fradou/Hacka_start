@@ -4,6 +4,7 @@ namespace TransBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use TransBundle\Entity\Demand;
+use TransBundle\Entity\User;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -60,6 +61,20 @@ class MainController extends Controller
         $em = $this->getDoctrine()->getManager();
         $user = $em->getRepository('TransBundle:User')->find(4);
         return $this->render(':Main:rating.html.twig', array(
+            'user' => $user,
+        ));
+    }
+
+    public function mailValidAction(Request $request, Demand $demand)
+    {
+        $mailvalid = $this->getDoctrine()->getManager();
+        $em = $mailvalid->getRepository('TransBundle:Demand')->find($demand);
+
+        $am = $this->getDoctrine()->getManager();
+        $user = $am->getRepository('TransBundle:User')->find(4);
+
+        return $this->render('Main/mailvalid.html.twig', array(
+            'demand' => $em,
             'user' => $user,
         ));
     }
