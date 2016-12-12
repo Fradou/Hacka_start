@@ -145,13 +145,18 @@ table {border: none;}
 .half_opacity {
     opacity:0.5;
 }
-.fa-handshake-o, .fa-home{
+.fa-comments-o,
+.fa-home,
+.fa-cogs,
+.fa-bell{
     color:white;
 }
-.fa-handshake-o:hover,
-.fa-home:hover
+.fa-comments-o:hover,
+.fa-home:hover,
+.fa-cogs:hover,
+.fa-bell:hover
 {
-    color:orangered;
+    color:grey;
 }
 .navbar-fixed-bottom, .navbar-fixed-top, .navbar-static-top {
     border-radius: 0;

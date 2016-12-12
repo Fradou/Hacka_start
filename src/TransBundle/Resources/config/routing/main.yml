@@ -1,5 +1,5 @@
 index:
-    path:     /
+    path:     /login
     defaults: { _controller: TransBundle:Main:index }
 
 demande:
