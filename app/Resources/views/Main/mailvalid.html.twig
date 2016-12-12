@@ -14,30 +14,30 @@
                                 <table class="table table-user-information">
                                     <tbody>
                                     <tr>
-                                        <td class="td_title"><i class="fa fa-user-circle"></i> Institution Involved</td>
+                                        <td class="td_title"><i class="fa fa-university"></i> Institution Involved</td>
                                         <td><p>{{ demand.institutionInvolved}}</p></td>
                                     </tr>
                                     <tr>
-                                        <td class="td_title"><i class="fa fa-globe"></i> Institution Name</td>
+                                        <td class="td_title"><i class="fa fa-university"></i> Institution Name</td>
                                         <td class="apl_bdd"><p>{{ demand.institutionName}}</p></td>
                                     </tr>
                                     <tr>
-                                        <td class="td_title"><i class="fa fa-mail-forward"></i> Language Needed</td>
+                                        <td class="td_title"><i class="fa fa-globe"></i> Language Needed</td>
                                         <td class="apl_bdd">{{ demand.languageNeeded}}</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="td_title"><i class="fa fa-mail-forward"></i> Location</td>
+                                        <td class="td_title"><i class="fa fa-globe"></i> Location</td>
                                         <td class="apl_bdd">{{ demand.location}}</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="td_title"><i class="fa fa-mail-forward"></i> Situation</td>
+                                        <td class="td_title"><i class="fa fa-info-circle"></i> Situation</td>
                                         <td class="apl_bdd">{{ demand.situation}}</a></td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <hr class="style-two">
+                        <hr class="style-one">
                         <div class="row">
                             <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="{{ asset('assets/img/'~user.profilepicture) }}" class="img-circle img-responsive pp"></div>
                             <div class=" col-md-9 col-lg-9 ">
@@ -58,6 +58,9 @@
                         <div class="row text-center">
                             <div class=" col-lg-offset-1 col-lg-10">
                                 <button class="btn btn-success button_me">ACCEPT</button><button class="btn btn-danger button_me">DECLINE</button>
+                            </div>
+                            <div class="col-lg-12">
+                                {% include ':Main:countdown.html.twig' %}
                             </div>
                         </div>
                     </div>
