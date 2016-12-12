@@ -148,7 +148,8 @@ table {border: none;}
 .fa-comments-o,
 .fa-home,
 .fa-cogs,
-.fa-bell{
+.fa-bell
+{
     color:white;
 }
 .fa-comments-o:hover,
@@ -162,10 +163,10 @@ table {border: none;}
     border-radius: 0;
 }
 .navbar-inverse {
-    background-image: -webkit-linear-gradient(top,#fc9a08 0,#D79A40 100%);
+    background-image: -webkit-linear-gradient(top,#fc9a08 0,#ffa832 100%);
     background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#fc9a08),to(#D79A40));
-    background-image: linear-gradient(to bottom,#fc9a08 0,#D79A40 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fc9a08),to(#ffa832));
+    background-image: linear-gradient(to bottom,#fc9a08 0,#ffa832 100%);
 }
 .navbar-inverse .navbar-nav > li > a {
     color: white;
@@ -175,3 +176,24 @@ table {border: none;}
     height: 35px;
     width: 35px;
 }
+.panel-title {
+    font-weight: 800;
+}
+.panel-info > .panel-heading {
+    color: white;
+    background-color: #fc9a08;
+    border-color: #fc9000;
+    background-image: linear-gradient(to bottom,#fc9a08 0, #ffa832 100%);
+
+}
+.panel-info {
+    border-color: #ffa832;
+}
+
+.text-info {
+    color: white;
+}
+.td_title{
+    text-decoration: underline;
+}
+hr.style-two { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
