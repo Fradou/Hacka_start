@@ -1,42 +1,63 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <div class="container">
-        <h1>Available translator</h1>
+<div class="container">
+    <h1>Available translators</h1>
 
-        <div class="panel-group" id="accordion">
-            {% set i=1 %}
-            {% for helper in helpers %}
+    <div class="panel-group" id="accordion">
+        {% set i=1 %}
+        {% for helper in helpers %}
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <div class="profpic">
-                                <img src="{{ helper.profilepicture }}"><p>{{ helper.firstName }} {{ helper.lastName }}</p>
-                            </div>
-                            <div class="ratinglist"><p>Rating : <span>{{ helper.rating }}/5</span><br>
-                                    Fee : <span>5€</span></p>
-                            </div>
-                            <br>
-                        </div>
-                        <p>
-                            Completed {{ helper.rateNumber }} transactions!<br>
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ i }}">Full profile</a>
-                            <a role="button" class="btn btn-success pull-right" href="{{ path('countdown') }}">JustAsk</a>
-                        </p>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <div class="profpic">
+                        <img class="img-circle" src="{{ helper.profilepicture }}"><p>{{ helper.firstName }} {{ helper.lastName }}</p>
                     </div>
-                    <div id="collapse{{ i }}" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>Nationality : {{ helper.nationality }}<br>
-                            </p>
-
-                        </div>
+                    <div class="ratinglist"><p>Rating : <span>{{ helper.rating }}/5</span><br>
+                            Fee : <span>5€</span></p>
                     </div>
+                    <br>
                 </div>
-                {% set i=i+1 %}
-            {%  endfor %}
+                <p>
+                    Completed {{ helper.rateNumber }} transactions !<br>
+                    Most experienced in {{ helper.experience }}.<br>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ i }}">Full profile</a>
+                    <a role="button" class="btn btn-success pull-right">JustAsk</a>
+                </p>
+            </div>
+            <div id="collapse{{ i }}" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Nationality : {{ helper.nationality }}<br><br>
+                        Languages :<br>
+                        {% if helper.lang1 %}
+                            {{ helper.lang1 }} : {{ helper.langrate1 }}/5<br>
+                        {% endif %}
+                        {% if helper.lang2 %}
+                            {{ helper.lang2 }} : {{ helper.langrate2 }}/5<br>
+                        {% endif %}
+                        {% if helper.lang3 %}
+                            {{ helper.lang3 }} : {{ helper.langrate3 }}/5<br>
+                        {% endif %}
+                        <br>
+                        <a href="">View previous transactions</a>
 
+                    </p>
+
+                </div>
+            </div>
         </div>
-        <div class="bloc_sp"></div>
+        {% set i=i+1 %}
+        {%  endfor %}
+
     </div>
+    <div class="bloc_sp"></div>
+</div>
 {% endblock %}
+
+        {% block javascripts %}
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+            <script type="text/javascript" src="{{ asset('/assets/js/list.js') }}"></script>
+        {% endblock %}
+

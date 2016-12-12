@@ -59,7 +59,7 @@ class MainController extends Controller
     public function ratingAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $user = $em->getRepository('TransBundle:User')->find(4);
+        $user = $em->getRepository('TransBundle:User')->find(1);
         return $this->render(':Main:rating.html.twig', array(
             'user' => $user,
         ));
@@ -71,7 +71,7 @@ class MainController extends Controller
         $em = $mailvalid->getRepository('TransBundle:Demand')->find($demand);
 
         $am = $this->getDoctrine()->getManager();
-        $user = $am->getRepository('TransBundle:User')->find(4);
+        $user = $am->getRepository('TransBundle:User')->find(7);
 
         return $this->render('Main/mailvalid.html.twig', array(
             'demand' => $em,

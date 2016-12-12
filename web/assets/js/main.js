@@ -8,4 +8,5 @@ $(document).ready(function(){
        $(this).nextAll().html('★').css('color', 'gold');
        $(this).html('★').css('color', 'gold');
    })
+
 });
