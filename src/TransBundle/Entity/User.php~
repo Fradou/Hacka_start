@@ -451,4 +451,33 @@ class User extends BaseUser
     {
         return $this->langrate3;
     }
+    /**
+     * @var string
+     */
+    private $experience;
+
+
+    /**
+     * Set experience
+     *
+     * @param string $experience
+     *
+     * @return User
+     */
+    public function setExperience($experience)
+    {
+        $this->experience = $experience;
+
+        return $this;
+    }
+
+    /**
+     * Get experience
+     *
+     * @return string
+     */
+    public function getExperience()
+    {
+        return $this->experience;
+    }
 }

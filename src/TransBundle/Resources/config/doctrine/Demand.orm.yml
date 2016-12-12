@@ -28,7 +28,9 @@ TransBundle\Entity\Demand:
             type: text
         translator:
             type: integer
+            nullable: true
         applicant:
             type: integer
+            nullable: true
 
     lifecycleCallbacks: {  }
