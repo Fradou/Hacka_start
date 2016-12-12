@@ -2,7 +2,8 @@
  * Created by alex on 12/12/16.
  */
 $(document).ready(function(){
-    $('.btn').click(function(){
-        $(this).removeClass('btn-success').addClass('btn-warning').html('Pending');
+    $('.btn-success').click(function(){
+        $(this).html('+334569875');
+        $('.btn-danger').hide()
     })
 });
