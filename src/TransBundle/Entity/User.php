@@ -277,4 +277,207 @@ class User extends BaseUser
     {
         return $this->rate_number;
     }
+    /**
+     * @var string
+     */
+    private $lang1;
+
+    /**
+     * @var integer
+     */
+    private $langrate1;
+
+    /**
+     * @var string
+     */
+    private $lang2;
+
+    /**
+     * @var integer
+     */
+    private $langrate2;
+
+    /**
+     * @var string
+     */
+    private $lang3;
+
+    /**
+     * @var integer
+     */
+    private $langrate3;
+
+
+    /**
+     * Set lang1
+     *
+     * @param string $lang1
+     *
+     * @return User
+     */
+    public function setLang1($lang1)
+    {
+        $this->lang1 = $lang1;
+
+        return $this;
+    }
+
+    /**
+     * Get lang1
+     *
+     * @return string
+     */
+    public function getLang1()
+    {
+        return $this->lang1;
+    }
+
+    /**
+     * Set langrate1
+     *
+     * @param integer $langrate1
+     *
+     * @return User
+     */
+    public function setLangrate1($langrate1)
+    {
+        $this->langrate1 = $langrate1;
+
+        return $this;
+    }
+
+    /**
+     * Get langrate1
+     *
+     * @return integer
+     */
+    public function getLangrate1()
+    {
+        return $this->langrate1;
+    }
+
+    /**
+     * Set lang2
+     *
+     * @param string $lang2
+     *
+     * @return User
+     */
+    public function setLang2($lang2)
+    {
+        $this->lang2 = $lang2;
+
+        return $this;
+    }
+
+    /**
+     * Get lang2
+     *
+     * @return string
+     */
+    public function getLang2()
+    {
+        return $this->lang2;
+    }
+
+    /**
+     * Set langrate2
+     *
+     * @param integer $langrate2
+     *
+     * @return User
+     */
+    public function setLangrate2($langrate2)
+    {
+        $this->langrate2 = $langrate2;
+
+        return $this;
+    }
+
+    /**
+     * Get langrate2
+     *
+     * @return integer
+     */
+    public function getLangrate2()
+    {
+        return $this->langrate2;
+    }
+
+    /**
+     * Set lang3
+     *
+     * @param string $lang3
+     *
+     * @return User
+     */
+    public function setLang3($lang3)
+    {
+        $this->lang3 = $lang3;
+
+        return $this;
+    }
+
+    /**
+     * Get lang3
+     *
+     * @return string
+     */
+    public function getLang3()
+    {
+        return $this->lang3;
+    }
+
+    /**
+     * Set langrate3
+     *
+     * @param integer $langrate3
+     *
+     * @return User
+     */
+    public function setLangrate3($langrate3)
+    {
+        $this->langrate3 = $langrate3;
+
+        return $this;
+    }
+
+    /**
+     * Get langrate3
+     *
+     * @return integer
+     */
+    public function getLangrate3()
+    {
+        return $this->langrate3;
+    }
+    /**
+     * @var string
+     */
+    private $experience;
+
+
+    /**
+     * Set experience
+     *
+     * @param string $experience
+     *
+     * @return User
+     */
+    public function setExperience($experience)
+    {
+        $this->experience = $experience;
+
+        return $this;
+    }
+
+    /**
+     * Get experience
+     *
+     * @return string
+     */
+    public function getExperience()
+    {
+        return $this->experience;
+    }
 }

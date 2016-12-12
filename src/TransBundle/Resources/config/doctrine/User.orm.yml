@@ -34,4 +34,25 @@ TransBundle\Entity\User:
         rate_number:
             type: integer
             nullable: true
+        lang1:
+            type: string
+            nullable: true
+        langrate1:
+            type: integer
+            nullable: true
+        lang2:
+            type: string
+            nullable: true
+        langrate2:
+            type: integer
+            nullable: true
+        lang3:
+            type: string
+            nullable: true
+        langrate3:
+            type: integer
+            nullable: true
+        experience:
+            type: string
+            nullable: true
     lifecycleCallbacks: {  }
