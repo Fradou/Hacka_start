@@ -1,16 +1,71 @@
 {% extends "::base.html.twig" %}
 
 {% block content %}
-    <h2>firstName</h2>
-    {{ user.firstName }}
-    <h2>lastName</h2>
-    {{ user.lastName }}
-    <h2>language Needed</h2>
-    {{ demand.languageNeeded}}
-    <h2>location</h2>
-    {{ demand.location}}
-    <h2>institution Involved</h2>
-    {{ demand.institutionInvolved}}
-    <h2>institution Name</h2>
-    {{ demand.institutionName}}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Help Demand<span class="text-info pull-right">{{ "now"|date("m/d/Y") }}</span></h3>
+                    </div>
+                    <div class="panel-body">
+                            <div class=" col-md-9 col-lg-9 ">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                    <tr>
+                                        <td class="td_title"><i class="fa fa-university"></i> Institution Involved</td>
+                                        <td><p>{{ demand.institutionInvolved}}</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title"><i class="fa fa-university"></i> Institution Name</td>
+                                        <td class="apl_bdd"><p>{{ demand.institutionName}}</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title"><i class="fa fa-globe"></i> Language Needed</td>
+                                        <td class="apl_bdd">{{ demand.languageNeeded}}</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title"><i class="fa fa-globe"></i> Location</td>
+                                        <td class="apl_bdd">{{ demand.location}}</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_title"><i class="fa fa-info-circle"></i> Situation</td>
+                                        <td class="apl_bdd">{{ demand.situation}}</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr class="style-one">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="{{ asset('assets/img/'~user.profilepicture) }}" class="img-circle img-responsive pp"></div>
+                            <div class=" col-md-9 col-lg-9 ">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_title"><i class="fa fa-user-circle"></i> User</td>
+                                            <td><p>{{ user.firstName }} {{ user.lastName }}</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_title"><i class="fa fa-globe"></i> Nationality</td>
+                                            <td class="apl_bdd"><p>{{ user.nationality |upper}}</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class=" col-lg-offset-1 col-lg-10">
+                                <button class="btn btn-success button_me">ACCEPT</button><button class="btn btn-danger button_me">DECLINE</button>
+                            </div>
+                            <div class="col-lg-12">
+                                {% include ':Main:countdown.html.twig' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
