@@ -98,17 +98,9 @@ table {border: none;}
 }
 
 .row .blabla{
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
 }
-
-/* #timer{
-    background-color: orange;
-    color: white;
-    font-size: 5em;
-    border-radius: 8px;
-    width: 92px;
-} */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -133,7 +125,7 @@ table {border: none;}
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 800%;
+    font-size: 600%;
     text-align: center;
     width: 300px;
     z-index: 2;
@@ -224,6 +216,13 @@ table {border: none;}
     font-size: 16px;
 }
 hr.style-two { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+hr.style-one { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+
 .pp{
-    width: 250px;
+    width: 175px;
+}
+.button_me{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
 }
